@@ -3,10 +3,10 @@
  * check_file_exist - function that check is an given file exist or not ,
  * and print message to stderr if the file not exist
  *
- * @shellname: The name of the shell invoking the function
+ * @shellname: The name of the shell calling the function
  * @fname: a pointer to string that contains filename
  * @err_msg: Error message to be displayed if the file is not executable
- * @count: a count associated with the current operation
+ * @count: a count in relation with the immediate operation
  *
  * Return: 1 if file exist or 0 if not exist.
  */
@@ -32,7 +32,7 @@ return (0);
 }
 
 /**
- * check_file_perm - function that check is a given file is executable
+ * chk_file_permit - function that check is a given file is executable
  * and print message to stderr if not executable
  *
  * @shellname: The name of the shell invoking the function
@@ -42,7 +42,7 @@ return (0);
  *
  * Return: 1 if file executable or 0 if not executable
  */
-int check_file_perm(char *shellname, char *filename, char *err_msg, int count)
+int chk_file_permit(char *shellname, char *filename, char *err_msg, int count)
 {
 int len;
 struct stat f_stat;

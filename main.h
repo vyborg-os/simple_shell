@@ -25,7 +25,7 @@ int _puts_len(int std, char *str, int len);
 /** check_file.c **/
 int _putchar_err(int std, char c);
 int check_file_exist(char *shellname, char *filename, char *er_msg, int count);
-int check_file_perm(char *shellname, char *filename, char *err_msg, int count);
+int chk_file_permit(char *shellname, char *filename, char *err_msg, int count);
 void print_err_file(char *shellname, char *filename, char *err_msg, int count);
 int check_file(char *shellname, char *filename, char **args, int count);
 
@@ -79,7 +79,7 @@ int _echo_get_var(char **args, int indice);
 int exec_cmd(char *cmd, char *args[]);
 
 /** get_cmd_path.c **/
-char *check_command_path(char *cmd);
+char *chk_command_filepath(char *cmd);
 
 /** free.c **/
 void _free(char *, char *);

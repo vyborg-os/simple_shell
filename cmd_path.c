@@ -5,7 +5,7 @@
  * Return: An allocated string containing the full path to the executable
  *         or NULL if the executable is not found
  */
-char *check_command_path(char *cmd)
+char *chk_command_filepath(char *cmd)
 {
 	char *path = NULL, *path_dup = NULL, *token, *file_path = NULL;
 	size_t cmd_len = 0, dir_len = 0;

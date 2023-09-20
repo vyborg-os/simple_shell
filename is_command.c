@@ -15,7 +15,7 @@
 
 int check_if_exit(char **args, char *shellname, int count, int cec, char **a)
 {
-	int r_atoi = 0;
+	int r_now = 0;
 
 	if (_strcmp(args[0], "exit") == 0)
 	{
@@ -24,8 +24,8 @@ int check_if_exit(char **args, char *shellname, int count, int cec, char **a)
 		if (a)
 		free(a);
 		return (cec); }
-		r_atoi = _atoi(args[1]);
-		if (r_atoi == -1)
+		r_now = _atoi(args[1]);
+		if (r_now == -1)
 		{
 			_puts_len(2, shellname, _slen(shellname));
 			write(2, ": ", 2);
@@ -45,7 +45,7 @@ int check_if_exit(char **args, char *shellname, int count, int cec, char **a)
 		free(args);
 		if (a)
 		free(a);
-		return (r_atoi);
+		return (r_now);
 	}
 	return (-1);
 }
