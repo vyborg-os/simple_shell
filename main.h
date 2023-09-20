@@ -79,7 +79,7 @@ int _echo_get_var(char **args, int indice);
 int exec_cmd(char *cmd, char *args[]);
 
 /** get_cmd_path.c **/
-char *chk_command_filepath(char *cmd);
+char *check_command_path(char *cmd);
 
 /** free.c **/
 void _free(char *, char *);
